@@ -28,5 +28,5 @@
         "default_popup": "popup.html",
     },
 
-    "permissions": [ "nativeMessaging" ]
+    "permissions": [ "nativeMessaging", "storage" ]
 }

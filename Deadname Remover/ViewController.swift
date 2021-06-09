@@ -7,6 +7,7 @@
 
 import UIKit
 import WebKit
+import SwiftUI
 
 class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHandler {
 
@@ -24,11 +25,17 @@ class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHan
     }
 
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        // Override point for customization.
+        
     }
 
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
-        // Override point for customization.
+        
+        if (message.body as? String) == "configure" {
+            let vc = UIHostingController(rootView: Configuration(dismiss: {
+                self.dismiss(animated: true, completion: nil)
+            }))
+            vc.modalPresentationStyle = .pageSheet
+            present(vc, animated: true, completion: nil)
+        }
     }
-
 }

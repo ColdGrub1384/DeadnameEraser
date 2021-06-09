@@ -14,9 +14,17 @@ class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
         let item = context.inputItems[0] as! NSExtensionItem
         let message = item.userInfo?[SFExtensionMessageKey]
         os_log(.default, "Received message from browser.runtime.sendNativeMessage: %@", message as! CVarArg)
-
+        
+        let names = NamesDatabase.shared.names.sorted(by: { $0.deadName.count > $1.deadName.count })
+        
+        var array = [[String:String]]()
+        
+        for name in names {
+            array.append(["deadname": name.deadName, "choosenname": name.currentName])
+        }
+        
         let response = NSExtensionItem()
-        response.userInfo = [ SFExtensionMessageKey: [ "Response to": message ] ]
+        response.userInfo = [ SFExtensionMessageKey: array ]
 
         context.completeRequest(returningItems: [response], completionHandler: nil)
     }

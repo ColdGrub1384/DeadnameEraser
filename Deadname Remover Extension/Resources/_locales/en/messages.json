@@ -1,10 +1,10 @@
 {
     "extension_name": {
-        "message": "Deadname Remover Extension",
+        "message": "Deadname Remover",
         "description": "The display name for the extension."
     },
     "extension_description": {
-        "message": "This is Deadname Remover Extension. You should tell us what your extension does here.",
+        "message": "This web extension automatically replaces your deadname by your choosen name.",
         "description": "Description of what the extension does."
     }
 }

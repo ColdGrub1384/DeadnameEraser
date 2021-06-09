@@ -22,10 +22,15 @@
 		C9372768267040400025AA38 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = C9372767267040400025AA38 /* manifest.json */; };
 		C937276A267040400025AA38 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = C9372769267040400025AA38 /* background.js */; };
 		C937276C267040400025AA38 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = C937276B267040400025AA38 /* content.js */; };
-		C937276E267040400025AA38 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = C937276D267040400025AA38 /* popup.html */; };
-		C9372770267040400025AA38 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = C937276F267040400025AA38 /* popup.css */; };
-		C9372772267040400025AA38 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = C9372771267040400025AA38 /* popup.js */; };
 		C9372774267040400025AA38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9372755267040400025AA38 /* Assets.xcassets */; };
+		C93727812670559F0025AA38 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = C937277E2670559F0025AA38 /* popup.js */; };
+		C93727822670559F0025AA38 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = C937277F2670559F0025AA38 /* popup.html */; };
+		C93727832670559F0025AA38 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = C93727802670559F0025AA38 /* popup.css */; };
+		C9372785267068990025AA38 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9372784267068990025AA38 /* Configuration.swift */; };
+		C9372787267069CD0025AA38 /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9372786267069CD0025AA38 /* Name.swift */; };
+		C937278926706D240025AA38 /* NamesDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C937278826706D240025AA38 /* NamesDatabase.swift */; };
+		C937278C2670748D0025AA38 /* NamesDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C937278826706D240025AA38 /* NamesDatabase.swift */; };
+		C937278D267074B50025AA38 /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9372786267069CD0025AA38 /* Name.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,10 +76,15 @@
 		C9372767267040400025AA38 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
 		C9372769267040400025AA38 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
 		C937276B267040400025AA38 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
-		C937276D267040400025AA38 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
-		C937276F267040400025AA38 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
-		C9372771267040400025AA38 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
 		C9372773267040400025AA38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C937277E2670559F0025AA38 /* popup.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
+		C937277F2670559F0025AA38 /* popup.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
+		C93727802670559F0025AA38 /* popup.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
+		C9372784267068990025AA38 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		C9372786267069CD0025AA38 /* Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Name.swift; sourceTree = "<group>"; };
+		C937278826706D240025AA38 /* NamesDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamesDatabase.swift; sourceTree = "<group>"; };
+		C937278A26706DEC0025AA38 /* Deadname Remover.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Deadname Remover.entitlements"; sourceTree = "<group>"; };
+		C937278B26706E2A0025AA38 /* Deadname Remover Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Deadname Remover Extension.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,9 +126,13 @@
 		C9372740267040400025AA38 /* Deadname Remover */ = {
 			isa = PBXGroup;
 			children = (
+				C937278A26706DEC0025AA38 /* Deadname Remover.entitlements */,
 				C9372741267040400025AA38 /* AppDelegate.swift */,
 				C937274B267040400025AA38 /* SceneDelegate.swift */,
 				C937274D267040400025AA38 /* ViewController.swift */,
+				C9372784267068990025AA38 /* Configuration.swift */,
+				C9372786267069CD0025AA38 /* Name.swift */,
+				C937278826706D240025AA38 /* NamesDatabase.swift */,
 				C937274F267040400025AA38 /* LaunchScreen.storyboard */,
 				C9372752267040400025AA38 /* Main.storyboard */,
 				C9372755267040400025AA38 /* Assets.xcassets */,
@@ -141,6 +155,7 @@
 		C937275F267040400025AA38 /* Deadname Remover Extension */ = {
 			isa = PBXGroup;
 			children = (
+				C937278B26706E2A0025AA38 /* Deadname Remover Extension.entitlements */,
 				C9372760267040400025AA38 /* SafariWebExtensionHandler.swift */,
 				C9372773267040400025AA38 /* Info.plist */,
 				C9372762267040400025AA38 /* Resources */,
@@ -156,9 +171,9 @@
 				C9372767267040400025AA38 /* manifest.json */,
 				C9372769267040400025AA38 /* background.js */,
 				C937276B267040400025AA38 /* content.js */,
-				C937276D267040400025AA38 /* popup.html */,
-				C937276F267040400025AA38 /* popup.css */,
-				C9372771267040400025AA38 /* popup.js */,
+				C93727802670559F0025AA38 /* popup.css */,
+				C937277F2670559F0025AA38 /* popup.html */,
+				C937277E2670559F0025AA38 /* popup.js */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -257,14 +272,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C93727822670559F0025AA38 /* popup.html in Resources */,
 				C937276A267040400025AA38 /* background.js in Resources */,
-				C9372770267040400025AA38 /* popup.css in Resources */,
-				C937276E267040400025AA38 /* popup.html in Resources */,
+				C93727812670559F0025AA38 /* popup.js in Resources */,
 				C9372766267040400025AA38 /* images in Resources */,
+				C93727832670559F0025AA38 /* popup.css in Resources */,
 				C9372768267040400025AA38 /* manifest.json in Resources */,
 				C9372764267040400025AA38 /* _locales in Resources */,
 				C937276C267040400025AA38 /* content.js in Resources */,
-				C9372772267040400025AA38 /* popup.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +292,10 @@
 			files = (
 				C937274E267040400025AA38 /* ViewController.swift in Sources */,
 				C9372742267040400025AA38 /* AppDelegate.swift in Sources */,
+				C9372785267068990025AA38 /* Configuration.swift in Sources */,
+				C937278926706D240025AA38 /* NamesDatabase.swift in Sources */,
 				C937274C267040400025AA38 /* SceneDelegate.swift in Sources */,
+				C9372787267069CD0025AA38 /* Name.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +303,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C937278D267074B50025AA38 /* Name.swift in Sources */,
 				C9372761267040400025AA38 /* SafariWebExtensionHandler.swift in Sources */,
+				C937278C2670748D0025AA38 /* NamesDatabase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +466,7 @@
 		C9372778267040400025AA38 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Deadname Remover Extension/Deadname Remover Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y96PL6G497;
@@ -463,6 +484,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ch.ada.Deadname-Remover.Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -472,6 +494,7 @@
 		C9372779267040400025AA38 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Deadname Remover Extension/Deadname Remover Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y96PL6G497;
@@ -489,6 +512,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ch.ada.Deadname-Remover.Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -501,12 +525,17 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = "Deadname Remover/Deadname Remover.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y96PL6G497;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Deadname Remover/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Deadname Remover";
+				INFOPLIST_KEY_CFBundleDisplayName = "D Remover";
+				INFOPLIST_KEY_CFBundleExecutable = "Deadname Remover";
+				INFOPLIST_KEY_CFBundleName = "Deadname Remover";
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -524,6 +553,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ch.ada.Deadname-Remover";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -536,12 +566,17 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = "Deadname Remover/Deadname Remover.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y96PL6G497;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Deadname Remover/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Deadname Remover";
+				INFOPLIST_KEY_CFBundleDisplayName = "D Remover";
+				INFOPLIST_KEY_CFBundleExecutable = "Deadname Remover";
+				INFOPLIST_KEY_CFBundleName = "Deadname Remover";
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -559,6 +594,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ch.ada.Deadname-Remover";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

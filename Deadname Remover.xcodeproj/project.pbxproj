@@ -473,6 +473,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Deadname Remover Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Deadname Remover Extension";
+				INFOPLIST_KEY_CFBundleExecutable = "Deadname Remover Extension";
+				INFOPLIST_KEY_CFBundleName = "Deadname Remover Extension";
+				INFOPLIST_KEY_CFBundleVersion = 2;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -501,6 +504,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Deadname Remover Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Deadname Remover Extension";
+				INFOPLIST_KEY_CFBundleExecutable = "Deadname Remover Extension";
+				INFOPLIST_KEY_CFBundleName = "Deadname Remover Extension";
+				INFOPLIST_KEY_CFBundleVersion = 2;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -535,7 +541,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "D Remover";
 				INFOPLIST_KEY_CFBundleExecutable = "Deadname Remover";
 				INFOPLIST_KEY_CFBundleName = "Deadname Remover";
-				INFOPLIST_KEY_CFBundleVersion = 1;
+				INFOPLIST_KEY_CFBundleVersion = 2;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -576,7 +582,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "D Remover";
 				INFOPLIST_KEY_CFBundleExecutable = "Deadname Remover";
 				INFOPLIST_KEY_CFBundleName = "Deadname Remover";
-				INFOPLIST_KEY_CFBundleVersion = 1;
+				INFOPLIST_KEY_CFBundleVersion = 2;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

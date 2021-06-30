@@ -13,9 +13,9 @@ function walkText(node, names) {
         var newText = node.data;
         
         names.forEach(function (name) {
-            newText = newText.replace(name.deadname.toUpperCase(), name.choosenname.toUpperCase());
-            newText = newText.replace(name.deadname.toLowerCase(), name.choosenname.toLowerCase());
-            newText = newText.replaceAll(name.deadname, name.choosenname);
+            newText = newText.replace(name.deadname.toUpperCase(), name.chosenname.toUpperCase());
+            newText = newText.replace(name.deadname.toLowerCase(), name.chosenname.toLowerCase());
+            newText = newText.replaceAll(name.deadname, name.chosenname);
         })
         
         if (newText != node.data) {

@@ -4,7 +4,7 @@
         "description": "The display name for the extension."
     },
     "extension_description": {
-        "message": "This web extension automatically replaces your deadname by your choosen name.",
+        "message": "This web extension automatically replaces your deadname by your chosen name.",
         "description": "Description of what the extension does."
     }
 }

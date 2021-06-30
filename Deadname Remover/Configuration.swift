@@ -23,7 +23,7 @@ struct Configuration: View {
                             HStack {
                                 SecureField("Deadname", text: element.deadName)
                                 
-                                TextField("Choosen name", text: element.currentName)
+                                TextField("chosen name", text: element.currentName)
                             }.padding()
                         }.onDelete { indexSet in
                             guard let i = indexSet.first else {

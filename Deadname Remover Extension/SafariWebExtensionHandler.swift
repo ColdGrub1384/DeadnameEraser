@@ -20,7 +20,7 @@ class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
         var array = [[String:String]]()
         
         for name in names {
-            array.append(["deadname": name.deadName, "choosenname": name.currentName])
+            array.append(["deadname": name.deadName, "chosenname": name.currentName])
         }
         
         let response = NSExtensionItem()

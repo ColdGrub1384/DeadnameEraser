@@ -44,12 +44,21 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
+            BlueprintIdentifier = "C974041A268C1CA60056B62B"
+            BuildableName = "Deadname Eraser.app"
+            BlueprintName = "Deadname Eraser (macOS)"
+            ReferencedContainer = "container:Deadname Eraser.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
             BlueprintIdentifier = "C9740408268C1CA60056B62B"
             BuildableName = "Deadname Remover.app"
             BlueprintName = "Deadname Eraser (iOS)"
             ReferencedContainer = "container:Deadname Remover.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"

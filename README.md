@@ -1,4 +1,4 @@
-# Deadname Remover for Safari
+# Deadname Eraser for Safari
 
 This web extension for Safari replaces your deadname by your chosen name.
 

@@ -25,7 +25,14 @@
     }],
 
     "browser_action": {
-        "default_popup": "popup.html"
+        "default_popup": "popup.html",
+        "default_icon": {
+            "48": "images/toolbar-icon-48.png",
+            "64": "images/toolbar-icon-64.png",
+            "96": "images/toolbar-icon-96.png",
+            "128": "images/toolbar-icon-128.png",
+            "256": "images/toolbar-icon-256.png",
+        }
     },
 
     "permissions": [ "nativeMessaging", "storage" ]

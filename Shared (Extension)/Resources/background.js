@@ -1,12 +1,9 @@
 browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
-    
-    console.log("Received request: ", request);
-    
     browser.storage.local.get((item) => {
         var timesDeadnamed = item;
         
         if (request == "names") {
-            browser.runtime.sendNativeMessage("Deadname Remover", {}, function(response) {
+            browser.runtime.sendNativeMessage("Deadname Eraser", {}, function(response) {
                 sendResponse(response);
             });
         } else if (request.deadnamed == undefined) {

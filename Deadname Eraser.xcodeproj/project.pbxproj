@@ -116,13 +116,13 @@
 		C9740402268C1CA60056B62B /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
 		C9740403268C1CA60056B62B /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
 		C9740404268C1CA60056B62B /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
-		C9740409268C1CA60056B62B /* Deadname Remover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Deadname Remover.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9740409268C1CA60056B62B /* Deadname Eraser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Deadname Eraser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C974040C268C1CA60056B62B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C974040E268C1CA60056B62B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C9740411268C1CA60056B62B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9740414268C1CA60056B62B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9740416268C1CA60056B62B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C974041B268C1CA60056B62B /* Deadname Remover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Deadname Remover.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C974041B268C1CA60056B62B /* Deadname Eraser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Deadname Eraser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C974041D268C1CA60056B62B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9740420268C1CA60056B62B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9740422268C1CA60056B62B /* Deadname Remover.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Deadname Remover.entitlements"; sourceTree = "<group>"; };
@@ -236,8 +236,8 @@
 		C974040A268C1CA60056B62B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C9740409268C1CA60056B62B /* Deadname Remover.app */,
-				C974041B268C1CA60056B62B /* Deadname Remover.app */,
+				C9740409268C1CA60056B62B /* Deadname Eraser.app */,
+				C974041B268C1CA60056B62B /* Deadname Eraser.app */,
 				C9740427268C1CA60056B62B /* Deadname Remover Extension.appex */,
 				C9740431268C1CA60056B62B /* Deadname Remover Extension.appex */,
 			);
@@ -286,9 +286,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C9740408268C1CA60056B62B /* Deadname Remover (iOS) */ = {
+		C9740408268C1CA60056B62B /* Deadname Eraser (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C974045B268C1CA60056B62B /* Build configuration list for PBXNativeTarget "Deadname Remover (iOS)" */;
+			buildConfigurationList = C974045B268C1CA60056B62B /* Build configuration list for PBXNativeTarget "Deadname Eraser (iOS)" */;
 			buildPhases = (
 				C9740405268C1CA60056B62B /* Sources */,
 				C9740406268C1CA60056B62B /* Frameworks */,
@@ -300,14 +300,14 @@
 			dependencies = (
 				C974042A268C1CA60056B62B /* PBXTargetDependency */,
 			);
-			name = "Deadname Remover (iOS)";
+			name = "Deadname Eraser (iOS)";
 			productName = "Deadname Remover (iOS)";
-			productReference = C9740409268C1CA60056B62B /* Deadname Remover.app */;
+			productReference = C9740409268C1CA60056B62B /* Deadname Eraser.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C974041A268C1CA60056B62B /* Deadname Remover (macOS) */ = {
+		C974041A268C1CA60056B62B /* Deadname Eraser (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C9740462268C1CA60056B62B /* Build configuration list for PBXNativeTarget "Deadname Remover (macOS)" */;
+			buildConfigurationList = C9740462268C1CA60056B62B /* Build configuration list for PBXNativeTarget "Deadname Eraser (macOS)" */;
 			buildPhases = (
 				C9740417268C1CA60056B62B /* Sources */,
 				C9740418268C1CA60056B62B /* Frameworks */,
@@ -319,14 +319,14 @@
 			dependencies = (
 				C9740434268C1CA60056B62B /* PBXTargetDependency */,
 			);
-			name = "Deadname Remover (macOS)";
+			name = "Deadname Eraser (macOS)";
 			productName = "Deadname Remover (macOS)";
-			productReference = C974041B268C1CA60056B62B /* Deadname Remover.app */;
+			productReference = C974041B268C1CA60056B62B /* Deadname Eraser.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C9740426268C1CA60056B62B /* Deadname Remover Extension (iOS) */ = {
+		C9740426268C1CA60056B62B /* Deadname Eraser Extension (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C9740457268C1CA60056B62B /* Build configuration list for PBXNativeTarget "Deadname Remover Extension (iOS)" */;
+			buildConfigurationList = C9740457268C1CA60056B62B /* Build configuration list for PBXNativeTarget "Deadname Eraser Extension (iOS)" */;
 			buildPhases = (
 				C9740423268C1CA60056B62B /* Sources */,
 				C9740424268C1CA60056B62B /* Frameworks */,
@@ -336,14 +336,14 @@
 			);
 			dependencies = (
 			);
-			name = "Deadname Remover Extension (iOS)";
+			name = "Deadname Eraser Extension (iOS)";
 			productName = "Deadname Remover Extension (iOS)";
 			productReference = C9740427268C1CA60056B62B /* Deadname Remover Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		C9740430268C1CA60056B62B /* Deadname Remover Extension (macOS) */ = {
+		C9740430268C1CA60056B62B /* Deadname Eraser Extension (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C974045E268C1CA60056B62B /* Build configuration list for PBXNativeTarget "Deadname Remover Extension (macOS)" */;
+			buildConfigurationList = C974045E268C1CA60056B62B /* Build configuration list for PBXNativeTarget "Deadname Eraser Extension (macOS)" */;
 			buildPhases = (
 				C974042D268C1CA60056B62B /* Sources */,
 				C974042E268C1CA60056B62B /* Frameworks */,
@@ -353,7 +353,7 @@
 			);
 			dependencies = (
 			);
-			name = "Deadname Remover Extension (macOS)";
+			name = "Deadname Eraser Extension (macOS)";
 			productName = "Deadname Remover Extension (macOS)";
 			productReference = C9740431268C1CA60056B62B /* Deadname Remover Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -395,10 +395,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C9740408268C1CA60056B62B /* Deadname Remover (iOS) */,
-				C974041A268C1CA60056B62B /* Deadname Remover (macOS) */,
-				C9740426268C1CA60056B62B /* Deadname Remover Extension (iOS) */,
-				C9740430268C1CA60056B62B /* Deadname Remover Extension (macOS) */,
+				C9740408268C1CA60056B62B /* Deadname Eraser (iOS) */,
+				C974041A268C1CA60056B62B /* Deadname Eraser (macOS) */,
+				C9740426268C1CA60056B62B /* Deadname Eraser Extension (iOS) */,
+				C9740430268C1CA60056B62B /* Deadname Eraser Extension (macOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -515,12 +515,12 @@
 /* Begin PBXTargetDependency section */
 		C974042A268C1CA60056B62B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C9740426268C1CA60056B62B /* Deadname Remover Extension (iOS) */;
+			target = C9740426268C1CA60056B62B /* Deadname Eraser Extension (iOS) */;
 			targetProxy = C9740429268C1CA60056B62B /* PBXContainerItemProxy */;
 		};
 		C9740434268C1CA60056B62B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C9740430268C1CA60056B62B /* Deadname Remover Extension (macOS) */;
+			target = C9740430268C1CA60056B62B /* Deadname Eraser Extension (macOS) */;
 			targetProxy = C9740433268C1CA60056B62B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -682,6 +682,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Deadname Remover Extension";
+				INFOPLIST_KEY_CFBundleExecutable = "Deadname Remover Extension";
+				INFOPLIST_KEY_CFBundleName = "Deadname Remover Extension";
+				INFOPLIST_KEY_CFBundleVersion = 5;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -710,6 +713,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Deadname Remover Extension";
+				INFOPLIST_KEY_CFBundleExecutable = "Deadname Remover Extension";
+				INFOPLIST_KEY_CFBundleName = "Deadname Remover Extension";
+				INFOPLIST_KEY_CFBundleVersion = 5;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -741,7 +747,10 @@
 				DEVELOPMENT_TEAM = Y96PL6G497;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (App)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Deadname Remover";
+				INFOPLIST_KEY_CFBundleDisplayName = "Deadname Eraser";
+				INFOPLIST_KEY_CFBundleExecutable = "Deadname Remover";
+				INFOPLIST_KEY_CFBundleName = "Deadname Remover";
+				INFOPLIST_KEY_CFBundleVersion = 5;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -758,7 +767,7 @@
 					WebKit,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ch.ada.Deadname-Remover";
-				PRODUCT_NAME = "Deadname Remover";
+				PRODUCT_NAME = "Deadname Eraser";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -778,7 +787,10 @@
 				DEVELOPMENT_TEAM = Y96PL6G497;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (App)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Deadname Remover";
+				INFOPLIST_KEY_CFBundleDisplayName = "Deadname Eraser";
+				INFOPLIST_KEY_CFBundleExecutable = "Deadname Remover";
+				INFOPLIST_KEY_CFBundleName = "Deadname Remover";
+				INFOPLIST_KEY_CFBundleVersion = 5;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -795,7 +807,7 @@
 					WebKit,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ch.ada.Deadname-Remover";
-				PRODUCT_NAME = "Deadname Remover";
+				PRODUCT_NAME = "Deadname Eraser";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -817,13 +829,16 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Deadname Remover Extension";
+				INFOPLIST_KEY_CFBundleExecutable = "Deadname Remover Extension";
+				INFOPLIST_KEY_CFBundleName = "Deadname Remover Extension";
+				INFOPLIST_KEY_CFBundleVersion = 5;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ch.ada.Deadname-Remover.Extension";
 				PRODUCT_NAME = "Deadname Remover Extension";
@@ -847,13 +862,16 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Deadname Remover Extension";
+				INFOPLIST_KEY_CFBundleExecutable = "Deadname Remover Extension";
+				INFOPLIST_KEY_CFBundleName = "Deadname Remover Extension";
+				INFOPLIST_KEY_CFBundleVersion = 5;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ch.ada.Deadname-Remover.Extension";
 				PRODUCT_NAME = "Deadname Remover Extension";
@@ -878,21 +896,24 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Deadname Remover";
+				INFOPLIST_KEY_CFBundleDisplayName = "Deadname Eraser";
+				INFOPLIST_KEY_CFBundleExecutable = "Deadname Remover";
+				INFOPLIST_KEY_CFBundleName = "Deadname Remover";
+				INFOPLIST_KEY_CFBundleVersion = 5;
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"-framework",
 					WebKit,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ch.ada.Deadname-Remover";
-				PRODUCT_NAME = "Deadname Remover";
+				PRODUCT_NAME = "Deadname Eraser";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -913,21 +934,24 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Deadname Remover";
+				INFOPLIST_KEY_CFBundleDisplayName = "Deadname Eraser";
+				INFOPLIST_KEY_CFBundleExecutable = "Deadname Remover";
+				INFOPLIST_KEY_CFBundleName = "Deadname Remover";
+				INFOPLIST_KEY_CFBundleVersion = 5;
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"-framework",
 					WebKit,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ch.ada.Deadname-Remover";
-				PRODUCT_NAME = "Deadname Remover";
+				PRODUCT_NAME = "Deadname Eraser";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -946,7 +970,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C9740457268C1CA60056B62B /* Build configuration list for PBXNativeTarget "Deadname Remover Extension (iOS)" */ = {
+		C9740457268C1CA60056B62B /* Build configuration list for PBXNativeTarget "Deadname Eraser Extension (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C9740458268C1CA60056B62B /* Debug */,
@@ -955,7 +979,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C974045B268C1CA60056B62B /* Build configuration list for PBXNativeTarget "Deadname Remover (iOS)" */ = {
+		C974045B268C1CA60056B62B /* Build configuration list for PBXNativeTarget "Deadname Eraser (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C974045C268C1CA60056B62B /* Debug */,
@@ -964,7 +988,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C974045E268C1CA60056B62B /* Build configuration list for PBXNativeTarget "Deadname Remover Extension (macOS)" */ = {
+		C974045E268C1CA60056B62B /* Build configuration list for PBXNativeTarget "Deadname Eraser Extension (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C974045F268C1CA60056B62B /* Debug */,
@@ -973,7 +997,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C9740462268C1CA60056B62B /* Build configuration list for PBXNativeTarget "Deadname Remover (macOS)" */ = {
+		C9740462268C1CA60056B62B /* Build configuration list for PBXNativeTarget "Deadname Eraser (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C9740463268C1CA60056B62B /* Debug */,

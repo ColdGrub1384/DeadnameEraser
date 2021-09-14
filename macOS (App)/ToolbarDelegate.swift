@@ -1,6 +1,6 @@
 //
 //  ToolbarDelegate.swift
-//  Deadname Remover (macOS)
+//  Deadname Eraser (macOS)
 //
 //  Created by Emma Labbé on 30-06-21.
 //

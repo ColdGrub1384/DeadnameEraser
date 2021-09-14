@@ -1,6 +1,6 @@
 //
 //  SafariWebExtensionHandler.swift
-//  Deadname Remover Extension
+//  Deadname Eraser Extension
 //
 //  Created by Emma Labbé on 08-06-21.
 //
@@ -20,13 +20,20 @@ class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
         var array = [[String:String]]()
         
         for name in names {
+            
+            guard !name.deadName.isEmpty else {
+                continue
+            }
+            
             array.append(["deadname": name.deadName, "chosenname": name.currentName])
         }
         
         let response = NSExtensionItem()
         response.userInfo = [ SFExtensionMessageKey: array ]
 
-        context.completeRequest(returningItems: [response], completionHandler: nil)
+        context.completeRequest(returningItems: [response], completionHandler: { success in
+            exit(success ? 0 : 1)
+        })
     }
 
 }

@@ -1,6 +1,6 @@
 //
 //  NamesDatabase.swift
-//  Deadname Remover
+//  Deadname Eraser
 //
 //  Created by Emma Labbé on 08-06-21.
 //

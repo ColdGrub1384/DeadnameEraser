@@ -1,17 +1,17 @@
 //
 //  Name.swift
-//  Deadname Remover
+//  Deadname Eraser
 //
 //  Created by Emma Labbé on 08-06-21.
 //
 
 import Foundation
 
-struct Name: Identifiable, Codable {
+struct Name: Identifiable, Codable, Hashable {
     
     var id = UUID()
     
     var deadName: String
     
-    var currentName: String
+    var currentName: String    
 }

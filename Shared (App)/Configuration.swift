@@ -1,6 +1,6 @@
 //
 //  Configuration.swift
-//  Deadname Remover
+//  Deadname Eraser
 //
 //  Created by Emma Labbé on 08-06-21.
 //
@@ -46,33 +46,46 @@ struct Configuration: View {
     
     let footer = Text("Type every variant of the name that you previously used so the web extension can replace it. Case doesn't matter. You can add your firstname and lastname together or you can just write your firstname but that may replace the name of someone else.").foregroundColor(.secondary).font(.footnote)
     
-    var contentList: some View {
-        ForEach(namesDatabase.names.indices, id: \.self) { i in
-            
-            HStack {
+    @State var isRemoving = false
+    
+    @ViewBuilder var contentList: some View {
+        if !isRemoving {
+            ForEach(namesDatabase.names.indices, id: \.self) { i in
                 
-                #if os(macOS)
-                Image(nsImage: NSImage(named: NSImage.stopProgressTemplateName)!).foregroundColor(.red).padding(.trailing, 10).onTapGesture {
+                HStack {
                     
-                    namesDatabase.names.remove(at: i)
-                }
-                #else
-                Image(systemName: "xmark").foregroundColor(.red).padding(.trailing, 10).onTapGesture {
+                    #if os(macOS)
+                    Image(nsImage: NSImage(named: NSImage.stopProgressTemplateName)!).foregroundColor(.red).padding(.trailing, 10).onTapGesture {
+                        
+                        isRemoving = true
+                        DispatchQueue.main.asyncAfter(deadline: .now()+0.2) {
+                            namesDatabase.names.remove(at: i)
+                        }
+                    }
+                    #else
+                    Image(systemName: "xmark").foregroundColor(.red).padding(.trailing, 10).onTapGesture {
+                        
+                        namesDatabase.names.remove(at: i)
+                    }
+                    #endif
                     
-                    namesDatabase.names.remove(at: i)
-                }
-                #endif
+                    if namesDatabase.names.indices.contains(i) {
+                        SecureField("Deadname", text: $namesDatabase.names[i].deadName).textFieldStyle(RoundedBorderTextFieldStyle())
+                        
+                        TextField("Chosen name", text: $namesDatabase.names[i].currentName).textFieldStyle(RoundedBorderTextFieldStyle())
+                    } else {
+                        EmptyView()
+                    }
+                }.padding()
                 
-                if namesDatabase.names.indices.contains(i) {
-                    SecureField("Deadname", text: $namesDatabase.names[i].deadName).textFieldStyle(RoundedBorderTextFieldStyle())
-                    
-                    TextField("Chosen name", text: $namesDatabase.names[i].currentName).textFieldStyle(RoundedBorderTextFieldStyle())
-                } else {
-                    EmptyView()
+                Divider()
+            }
+        } else {
+            Rectangle().fill(Color.white.opacity(0.01)).onAppear {
+                DispatchQueue.main.asyncAfter(deadline: .now()+0.2) {
+                    isRemoving = false
                 }
-            }.padding()
-            
-            Divider()
+            }
         }
     }
     
@@ -108,22 +121,13 @@ struct Configuration: View {
             #endif
         }
         #if os(iOS)
-        .toolbar(content: {
-            ToolbarItemGroup(placement: .navigationBarLeading) {
-                Button(action: dismiss, label: {
-                    Text("Done").bold()
-                })
-            }
-            
-            ToolbarItemGroup(placement: .navigationBarTrailing) {
-                                
-                Button(action: {
-                    namesDatabase.names.append(Name(deadName: "", currentName: ""))
-                }, label: {
-                    Image(systemName: "plus")
-                })
-            }
-        })
+        .navigationBarItems(leading: Button(action: dismiss, label: {
+            Text("Done").bold()
+        }), trailing: Button(action: {
+            namesDatabase.names.append(Name(deadName: "", currentName: ""))
+        }, label: {
+            Image(systemName: "plus")
+        }))
         #endif
     }
     
@@ -132,7 +136,6 @@ struct Configuration: View {
         NavigationView {
             content.navigationTitle("Configuration")
         }
-        .navigationViewStyle(StackNavigationViewStyle())
         #else
         content
         #endif

@@ -32,12 +32,10 @@ function walkText(node, names) {
 
 function replaceDeadname() {
     browser.runtime.sendMessage("names").then((response) => {
-        console.log("Received response: ", response);
                 
         walkText(document.body, response);
 
         browser.runtime.sendMessage({ deadnamed: timesDeadnamed }).then((response) => {
-            console.log("Received response: ", response);
         });
     });
 }

@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C974041A268C1CA60056B62B"
                BuildableName = "Deadname Remover.app"
-               BlueprintName = "Deadname Remover (macOS)"
+               BlueprintName = "Deadname Eraser (macOS)"
                ReferencedContainer = "container:Deadname Remover.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,7 +46,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C974041A268C1CA60056B62B"
             BuildableName = "Deadname Remover.app"
-            BlueprintName = "Deadname Remover (macOS)"
+            BlueprintName = "Deadname Eraser (macOS)"
             ReferencedContainer = "container:Deadname Remover.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -63,7 +63,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C974041A268C1CA60056B62B"
             BuildableName = "Deadname Remover.app"
-            BlueprintName = "Deadname Remover (macOS)"
+            BlueprintName = "Deadname Eraser (macOS)"
             ReferencedContainer = "container:Deadname Remover.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

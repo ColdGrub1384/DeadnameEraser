@@ -76,7 +76,7 @@ class ViewController: PlatformViewController, WKNavigationDelegate, WKScriptMess
             let vc = UIHostingController(rootView: Configuration(dismiss: {
                 self.dismiss(animated: true, completion: nil)
             }))
-            vc.modalPresentationStyle = .pageSheet
+            vc.modalPresentationStyle = .formSheet
             present(vc, animated: true, completion: nil)
             #else
             

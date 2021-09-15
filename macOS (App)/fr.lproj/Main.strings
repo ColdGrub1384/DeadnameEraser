@@ -1,0 +1,36 @@
+/* Class = "NSMenuItem"; title = "Deadname Eraser"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "Deadname Eraser";
+
+/* Class = "NSMenuItem"; title = "Quit Deadname Eraser"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "Quitter Deadname Eraser";
+
+/* Class = "NSMenuItem"; title = "About Deadname Eraser"; ObjectID = "5kV-Vb-QxS"; */
+"5kV-Vb-QxS.title" = "À propos de Deadname Eraser";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "Menu Principal";
+
+/* Class = "NSMenu"; title = "Help"; ObjectID = "F2S-fz-NVQ"; */
+"F2S-fz-NVQ.title" = "Aide";
+
+/* Class = "NSMenuItem"; title = "Deadname Eraser Help"; ObjectID = "FKE-Sm-Kum"; */
+"FKE-Sm-Kum.title" = "Aide de Deadname Eraser";
+
+/* Class = "NSWindow"; title = "Deadname Eraser"; ObjectID = "IQv-IB-iLA"; */
+"IQv-IB-iLA.title" = "Deadname Eraser";
+
+/* Class = "NSMenuItem"; title = "Show All"; ObjectID = "Kd2-mp-pUS"; */
+"Kd2-mp-pUS.title" = "Tout afficher";
+
+/* Class = "NSMenuItem"; title = "Hide Deadname Eraser"; ObjectID = "Olw-nP-bQN"; */
+"Olw-nP-bQN.title" = "Cacher Deadname Eraser";
+
+/* Class = "NSMenu"; title = "Deadname Eraser"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "Deadname Eraser";
+
+/* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "Vdr-fp-XzO"; */
+"Vdr-fp-XzO.title" = "Cacher les autres";
+
+/* Class = "NSMenuItem"; title = "Help"; ObjectID = "wpr-3q-Mcd"; */
+"wpr-3q-Mcd.title" = "Aide";
+

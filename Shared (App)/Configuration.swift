@@ -44,7 +44,7 @@ struct Configuration: View {
     
     var dismiss: (() -> Void)
     
-    let footer = Text("Type every variant of the name that you previously used so the web extension can replace it. Case doesn't matter. You can add your firstname and lastname together or you can just write your firstname but that may replace the name of someone else.").foregroundColor(.secondary).font(.footnote)
+    let footer = Text("Type every variant of your deadname so the extension can replace it (Case insensitive). You can add your firstname and lastname together or you can just write your firstname but that may replace the name of someone else.").foregroundColor(.secondary).font(.footnote)
     
     @State var isRemoving = false
     
@@ -70,7 +70,7 @@ struct Configuration: View {
                     #endif
                     
                     if namesDatabase.names.indices.contains(i) {
-                        SecureField("Deadname", text: $namesDatabase.names[i].deadName).textFieldStyle(RoundedBorderTextFieldStyle())
+                        SecureField(String(localized: "Deadname"), text: $namesDatabase.names[i].deadName).textFieldStyle(RoundedBorderTextFieldStyle())
                         
                         TextField("Chosen name", text: $namesDatabase.names[i].currentName).textFieldStyle(RoundedBorderTextFieldStyle())
                     } else {
@@ -134,7 +134,7 @@ struct Configuration: View {
     var body: some View {
         #if os(iOS)
         NavigationView {
-            content.navigationTitle("Configuration")
+            content.navigationTitle(Text("Configuration"))
         }
         #else
         content

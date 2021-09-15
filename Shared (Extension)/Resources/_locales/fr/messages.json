@@ -4,16 +4,16 @@
         "description": "The display name for the extension."
     },
     "extension_description": {
-        "message": "This web extension automatically replaces your deadname by your chosen name.",
+        "message": "Cette extension web remplace automatiquement ton deadname par ton prénom choisi.",
         "description": "Description of what the extension does."
     },
 
     "instructions": {
-        "message": "Type every variant of your deadname so the extension can replace it.",
+        "message": "Écrit chaque variante de ton deadname pour que l'extension puisse la remplacer.",
         "description": "Text displayed on the popup."
     },
     "add": {
-        "message": "Add",
+        "message": "Ajouter",
         "description": "'Add' button."
     },
     "deadname": {
@@ -21,7 +21,7 @@
         "description": "Deadname placeholder."
     },
     "chosen-name": {
-        "message": "Chosen name",
+        "message": "Prénom chosi",
         "description": "Chosen name placeholder"
     }
 }

@@ -1,0 +1,15 @@
+/* No comment provided by engineer. */
+"Chosen name" = "Nombre elegido";
+
+/* No comment provided by engineer. */
+"Configuration" = "Configuración";
+
+/* No comment provided by engineer. */
+"Deadname" = "Nombre muerto";
+
+/* No comment provided by engineer. */
+"Done" = "Hecho";
+
+/* No comment provided by engineer. */
+"Type every variant of your deadname so the extension can replace it (Case insensitive). You can add your firstname and lastname together or you can just write your firstname but that may replace the name of someone else." = "Escribe cada variante de tu nombre muerto para que la extensión pueda reemplazarlo (las mayúsculas no importan). Puedes agregar tu nombre y apellido juntos o simplemente puedes escribir tu nombre, pero eso puede reemplazar el nombre de otra persona.";
+

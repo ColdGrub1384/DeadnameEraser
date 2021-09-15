@@ -56,6 +56,8 @@
 		C9740477268C1D7A0056B62B /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9740468268C1D7A0056B62B /* Name.swift */; };
 		C9740478268C1D7A0056B62B /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9740468268C1D7A0056B62B /* Name.swift */; };
 		C974047C268C271C0056B62B /* ToolbarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C974047B268C271C0056B62B /* ToolbarDelegate.swift */; };
+		C97C482F26F1C05B007EBCC0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9B8497126F1BFB900285016 /* Localizable.strings */; };
+		C9B8497326F1BFB900285016 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9B8497126F1BFB900285016 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +138,16 @@
 		C9740479268C1DA00056B62B /* Deadname Remover.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Deadname Remover.entitlements"; sourceTree = "<group>"; };
 		C974047A268C1DD00056B62B /* Deadname Remover Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Deadname Remover Extension.entitlements"; sourceTree = "<group>"; };
 		C974047B268C271C0056B62B /* ToolbarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarDelegate.swift; sourceTree = "<group>"; };
+		C9B8496926F1BB5900285016 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		C9B8496A26F1BB5900285016 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		C9B8496B26F1BB5900285016 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		C9B8496C26F1BB5900285016 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = fr; path = ../fr.lproj/Main.html; sourceTree = "<group>"; };
+		C9B8496D26F1BB8E00285016 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		C9B8496E26F1BB8E00285016 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		C9B8496F26F1BB8E00285016 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		C9B8497026F1BB8E00285016 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = es; path = ../es.lproj/Main.html; sourceTree = "<group>"; };
+		C9B8497226F1BFB900285016 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C9B8497426F1BFC700285016 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +224,7 @@
 		C97403FA268C1CA50056B62B /* Shared (Extension) */ = {
 			isa = PBXGroup;
 			children = (
+				C9B8497126F1BFB900285016 /* Localizable.strings */,
 				C97403FB268C1CA50056B62B /* SafariWebExtensionHandler.swift */,
 				C97403FC268C1CA50056B62B /* Resources */,
 			);
@@ -382,13 +395,15 @@
 					};
 				};
 			};
-			buildConfigurationList = C97403F0268C1CA50056B62B /* Build configuration list for PBXProject "Deadname Remover" */;
+			buildConfigurationList = C97403F0268C1CA50056B62B /* Build configuration list for PBXProject "Deadname Eraser" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				fr,
+				es,
 			);
 			mainGroup = C97403EC268C1CA50056B62B;
 			productRefGroup = C974040A268C1CA60056B62B /* Products */;
@@ -413,6 +428,7 @@
 				C9740437268C1CA60056B62B /* Main.html in Resources */,
 				C974043D268C1CA60056B62B /* Script.js in Resources */,
 				C9740441268C1CA60056B62B /* Assets.xcassets in Resources */,
+				C9B8497326F1BFB900285016 /* Localizable.strings in Resources */,
 				C9740415268C1CA60056B62B /* Main.storyboard in Resources */,
 				C974043B268C1CA60056B62B /* Style.css in Resources */,
 			);
@@ -425,6 +441,7 @@
 				C974043A268C1CA60056B62B /* Icon.png in Resources */,
 				C974043C268C1CA60056B62B /* Style.css in Resources */,
 				C9740421268C1CA60056B62B /* Main.storyboard in Resources */,
+				C97C482F26F1C05B007EBCC0 /* Localizable.strings in Resources */,
 				C974043E268C1CA60056B62B /* Script.js in Resources */,
 				C9740442268C1CA60056B62B /* Assets.xcassets in Resources */,
 				C9740438268C1CA60056B62B /* Main.html in Resources */,
@@ -530,6 +547,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				C97403F4268C1CA50056B62B /* Base */,
+				C9B8496C26F1BB5900285016 /* fr */,
+				C9B8497026F1BB8E00285016 /* es */,
 			);
 			name = Main.html;
 			sourceTree = "<group>";
@@ -538,6 +557,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				C9740411268C1CA60056B62B /* Base */,
+				C9B8496926F1BB5900285016 /* fr */,
+				C9B8496D26F1BB8E00285016 /* es */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -546,6 +567,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				C9740414268C1CA60056B62B /* Base */,
+				C9B8496A26F1BB5900285016 /* fr */,
+				C9B8496E26F1BB8E00285016 /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -554,8 +577,19 @@
 			isa = PBXVariantGroup;
 			children = (
 				C9740420268C1CA60056B62B /* Base */,
+				C9B8496B26F1BB5900285016 /* fr */,
+				C9B8496F26F1BB8E00285016 /* es */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C9B8497126F1BFB900285016 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9B8497226F1BFB900285016 /* es */,
+				C9B8497426F1BFC700285016 /* fr */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -565,6 +599,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -624,6 +659,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -961,7 +997,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C97403F0268C1CA50056B62B /* Build configuration list for PBXProject "Deadname Remover" */ = {
+		C97403F0268C1CA50056B62B /* Build configuration list for PBXProject "Deadname Eraser" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C9740455268C1CA60056B62B /* Debug */,

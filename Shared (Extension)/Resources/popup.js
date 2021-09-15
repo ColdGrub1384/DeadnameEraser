@@ -1,16 +1,65 @@
-var query = { active: true, currentWindow: true };
+var container;
+var nameElement;
 
-browser.runtime.sendMessage("names").then((response) => {
-    if (response.length == 0) {
-        document.getElementById("message").innerText = "Open the app to configure the web extension.";
-    } else {
-        browser.tabs.query(query, function (tabs) {
-            browser.runtime.sendMessage({tabID: tabs[0].id}).then((response) => {
-                if (response.deadnamed > 0) {
-                    document.getElementById("message").innerText = "You've been deadnamed " + response.deadnamed + " time(s) on this website 😔";
-                }
-            });
+function load() {
+    container.innerHTML = "";
+    browser.runtime.sendMessage("names").then((response) => {
+        var i = 0;
+        response.forEach(function (name) {
+            var element = nameElement.cloneNode(true);
+            element.getElementsByClassName("element-left")[0].children[0].onclick = remove;
+            element.getElementsByClassName("element-left")[0].children[0].id = i.toString();
+            element.getElementsByClassName("element-left")[0].children[1].value = name.deadname;
+            element.getElementsByClassName("element-right")[0].children[0].value = name.chosenname;
+            container.append(element);
+            i += 1;
         })
+    });
+}
 
+function getNames() {
+
+    var names = [];
+
+    for (const element of container.children) {
+        var deadname = element.getElementsByClassName("element-left")[0].children[1].value;
+        var chosenname = element.getElementsByClassName("element-right")[0].children[0].value;
+        names.push({ "deadname": deadname, "chosenname": chosenname })
     }
-})
+
+    return names;
+}
+
+function add() {
+    var names = getNames();
+    names.push({ "deadname": "", "chosenname": "" });
+    browser.runtime.sendNativeMessage("Deadname Eraser", names).then((response) => {
+        load();
+    });
+}
+
+function save() {
+    browser.runtime.sendNativeMessage("Deadname Eraser", getNames());
+}
+
+function remove(e) {
+    var names = getNames();
+    names.splice(parseInt(e.target.id), 1);
+    browser.runtime.sendNativeMessage("Deadname Eraser", names).then((response) => {
+        load();
+    });
+}
+
+
+window.onload = function () {
+
+    container = document.getElementById("names-container");
+    nameElement = document.getElementsByClassName("name")[0];
+    nameElement.remove();
+
+    document.getElementById("add").onclick = add;
+
+    load();
+};
+
+window.onblur = save;

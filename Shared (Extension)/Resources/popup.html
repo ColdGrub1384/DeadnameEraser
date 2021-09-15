@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="popup.css">
-    <script type="module" src="popup.js"></script>
-</head>
-<body>
-    <span id="message">You've not been deadnamed on this website! 🎉</span>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="popup.css">
+        <script type="application/javascript" src="popup.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="toolbar">
+                <span></span>
+                <button id="add">Add</button>
+            </div>
+        </header>
+        
+        <p>Type every variant of the name that you previously used so the web extension can replace it.</p>
+
+        <div id="names-container">
+            <div class="name">
+                <div style="display: inline-block" class="element-left"> <button class="remove"> ❌ </button> <input type="password" placeholder="Deadname"> </div>
+                <div style="display: inline-block" class="element-right"> <input type="text" placeholder="Chosen name"> </div>
+            </div>
+        </div>
+    </body>
 </html>

@@ -45,8 +45,6 @@
 		C9740452268C1CA60056B62B /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = C9740403268C1CA60056B62B /* popup.css */; };
 		C9740453268C1CA60056B62B /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = C9740404268C1CA60056B62B /* popup.js */; };
 		C9740454268C1CA60056B62B /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = C9740404268C1CA60056B62B /* popup.js */; };
-		C974046D268C1D7A0056B62B /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9740466268C1D7A0056B62B /* Configuration.swift */; };
-		C974046E268C1D7A0056B62B /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9740466268C1D7A0056B62B /* Configuration.swift */; };
 		C9740471268C1D7A0056B62B /* NamesDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9740467268C1D7A0056B62B /* NamesDatabase.swift */; };
 		C9740472268C1D7A0056B62B /* NamesDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9740467268C1D7A0056B62B /* NamesDatabase.swift */; };
 		C9740473268C1D7A0056B62B /* NamesDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9740467268C1D7A0056B62B /* NamesDatabase.swift */; };
@@ -132,7 +130,6 @@
 		C974042C268C1CA60056B62B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9740431268C1CA60056B62B /* Deadname Remover Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Deadname Remover Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9740436268C1CA60056B62B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C9740466268C1D7A0056B62B /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		C9740467268C1D7A0056B62B /* NamesDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NamesDatabase.swift; sourceTree = "<group>"; };
 		C9740468268C1D7A0056B62B /* Name.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Name.swift; sourceTree = "<group>"; };
 		C9740479268C1DA00056B62B /* Deadname Remover.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Deadname Remover.entitlements"; sourceTree = "<group>"; };
@@ -200,7 +197,6 @@
 		C97403F1268C1CA50056B62B /* Shared (App) */ = {
 			isa = PBXGroup;
 			children = (
-				C9740466268C1D7A0056B62B /* Configuration.swift */,
 				C9740468268C1D7A0056B62B /* Name.swift */,
 				C9740467268C1D7A0056B62B /* NamesDatabase.swift */,
 				C97403F8268C1CA50056B62B /* ViewController.swift */,
@@ -486,7 +482,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C974043F268C1CA60056B62B /* ViewController.swift in Sources */,
-				C974046D268C1D7A0056B62B /* Configuration.swift in Sources */,
 				C974040D268C1CA60056B62B /* AppDelegate.swift in Sources */,
 				C9740471268C1D7A0056B62B /* NamesDatabase.swift in Sources */,
 				C9740475268C1D7A0056B62B /* Name.swift in Sources */,
@@ -501,7 +496,6 @@
 				C9740476268C1D7A0056B62B /* Name.swift in Sources */,
 				C9740440268C1CA60056B62B /* ViewController.swift in Sources */,
 				C974047C268C271C0056B62B /* ToolbarDelegate.swift in Sources */,
-				C974046E268C1D7A0056B62B /* Configuration.swift in Sources */,
 				C974041E268C1CA60056B62B /* AppDelegate.swift in Sources */,
 				C9740472268C1D7A0056B62B /* NamesDatabase.swift in Sources */,
 			);
@@ -713,7 +707,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "Deadname Remover Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = Y96PL6G497;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
@@ -744,7 +738,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "Deadname Remover Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = Y96PL6G497;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
@@ -779,7 +773,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Deadname Remover.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = Y96PL6G497;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (App)/Info.plist";
@@ -819,7 +813,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Deadname Remover.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = Y96PL6G497;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (App)/Info.plist";
@@ -857,7 +851,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "Deadname Remover Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = Y96PL6G497;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -890,7 +884,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "Deadname Remover Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = Y96PL6G497;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -926,7 +920,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Deadname Remover.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = Y96PL6G497;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -936,6 +930,7 @@
 				INFOPLIST_KEY_CFBundleExecutable = "Deadname Remover";
 				INFOPLIST_KEY_CFBundleName = "Deadname Remover";
 				INFOPLIST_KEY_CFBundleVersion = 5;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -964,7 +959,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Deadname Remover.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = Y96PL6G497;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -974,6 +969,7 @@
 				INFOPLIST_KEY_CFBundleExecutable = "Deadname Remover";
 				INFOPLIST_KEY_CFBundleName = "Deadname Remover";
 				INFOPLIST_KEY_CFBundleVersion = 5;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (

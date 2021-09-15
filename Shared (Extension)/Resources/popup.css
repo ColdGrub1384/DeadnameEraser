@@ -3,36 +3,33 @@
 }
 
 body {
-    padding: 10px;
     font-family: system-ui;
-    min-width: 400px;
+    min-width: 320px;
 }
 
 .name {
     display: flex;
-    flex-wrap: wrap;
     padding-right: 10px;
     padding-bottom: 10px;
 }
 
-.element-right {
-    padding-right: 10px;
-    padding-left: 10px;
-}
-
 input {
-    width: 125px;
     font-size: 17px;
 }
 
-#add, #save {
+.element-left > input {
+    width: 60%;
+}
+
+.element-right > input {
+    width: 90%;
+}
+
+#add {
     font-size: 17px;
     float: right;
 }
 
-#save {
-    float: right;
-}
 
 #toolbar {
     display: flex;
@@ -56,3 +53,5 @@ p {
 @media (prefers-color-scheme: dark) {
     /* Dark Mode styles go here. */
 }
+
+

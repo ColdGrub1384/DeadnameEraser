@@ -15,15 +15,6 @@ typealias PlatformViewController = UIViewController
 import Cocoa
 import SafariServices
 typealias PlatformViewController = NSViewController
-
-class HostingController: NSHostingController<Configuration> {
-    
-    override func viewDidDisappear() {
-        super.viewDidDisappear()
-        
-        NSApp.stopModal()
-    }
-}
 #endif
 
 let extensionBundleIdentifier = "ch.ada.Deadname-Remover.Extension"
@@ -63,7 +54,7 @@ class ViewController: PlatformViewController, WKNavigationDelegate, WKScriptMess
             }
 
             DispatchQueue.main.async {
-                webView.evaluateJavaScript("show('mac', \(state.isEnabled)")
+                webView.evaluateJavaScript("show('mac', \(state.isEnabled))")
             }
         }
 #endif
@@ -71,40 +62,12 @@ class ViewController: PlatformViewController, WKNavigationDelegate, WKScriptMess
 
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
         
-        if (message.body as? String) == "configure" {
-            #if os(iOS)
-            let vc = UIHostingController(rootView: Configuration(dismiss: {
-                self.dismiss(animated: true, completion: nil)
-            }))
-            vc.modalPresentationStyle = .formSheet
-            present(vc, animated: true, completion: nil)
-            #else
-            
-            let vc = HostingController(rootView: Configuration(dismiss: {
-                self.dismiss(nil)
-            }))
-            
-            vc.title = "Configuration"
-           
-            vc.preferredContentSize = NSSize(width: 500, height: 300)
-            
-            let window = NSWindow(contentViewController: vc)
-            window.toolbar = NSToolbar(identifier: "ConfigToolbar")
-            window.toolbar?.delegate = toolbarDelegate
-            window.toolbar?.insertItem(withItemIdentifier: .init(rawValue: "Add"), at: 0)
-            
-            view.window?.beginSheet(window, completionHandler: nil)
-            #endif
-        }
-        
 #if os(macOS)
-        if (message.body as! String != "open-preferences") {
-            return
-        }
-
-        SFSafariApplication.showPreferencesForExtension(withIdentifier: extensionBundleIdentifier) { error in
-            print(error?.localizedDescription.appending("\n") ?? "", terminator: "")
-        }
+        if (message.body as! String == "open-preferences") {
+            SFSafariApplication.showPreferencesForExtension(withIdentifier: extensionBundleIdentifier) { error in
+                print(error?.localizedDescription.appending("\n") ?? "", terminator: "")
+            }
+        }        
 #endif
     }
 

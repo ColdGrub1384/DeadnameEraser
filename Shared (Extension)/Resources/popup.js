@@ -34,22 +34,23 @@ function getNames() {
     return names;
 }
 
+
 function add() {
     var names = getNames();
     names.push({ "deadname": "", "chosenname": "" });
-    browser.runtime.sendNativeMessage("Deadname Eraser", names).then((response) => {
+    browser.runtime.sendMessage({ names: names }).then((response) => {
         load();
     });
 }
 
 function save() {
-    browser.runtime.sendNativeMessage("Deadname Eraser", getNames());
+    browser.runtime.sendMessage({ names: getNames() });
 }
 
 function remove(e) {
     var names = getNames();
     names.splice(parseInt(e.target.id), 1);
-    browser.runtime.sendNativeMessage("Deadname Eraser", names).then((response) => {
+    browser.runtime.sendMessage({ names: names }).then((response) => {
         load();
     });
 }

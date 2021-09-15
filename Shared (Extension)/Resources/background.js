@@ -1,18 +1,14 @@
 browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
     browser.storage.local.get((item) => {
-        var timesDeadnamed = item;
-        
         if (request == "names") {
-            browser.runtime.sendNativeMessage("Deadname Eraser", {}, function(response) {
-                sendResponse(response);
-            });
-        } else if (request.deadnamed == undefined) {
-            var res = { deadnamed: timesDeadnamed[request.tabID] };
-            sendResponse(res);
-        } else {
-            timesDeadnamed[sender.tab.id] = request.deadnamed;
-            browser.storage.local.set(timesDeadnamed);
-            sendResponse({ ok: 2 });
+            var _item = item.names;
+            if (_item === undefined) {
+                _item = [];
+            }
+            sendResponse(_item);
+        } else if (request.names !== undefined) {
+            browser.storage.local.set({ names: request.names });
+            sendResponse({ ok: 1 });
         }
     });
     

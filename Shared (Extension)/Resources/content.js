@@ -37,9 +37,6 @@ function replaceDeadname() {
     browser.runtime.sendMessage("names").then((response) => {
                 
         walkText(document.body, response);
-
-        browser.runtime.sendMessage({ deadnamed: timesDeadnamed }).then((response) => {
-        });
     });
 }
 

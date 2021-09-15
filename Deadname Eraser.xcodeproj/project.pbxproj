@@ -45,14 +45,6 @@
 		C9740452268C1CA60056B62B /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = C9740403268C1CA60056B62B /* popup.css */; };
 		C9740453268C1CA60056B62B /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = C9740404268C1CA60056B62B /* popup.js */; };
 		C9740454268C1CA60056B62B /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = C9740404268C1CA60056B62B /* popup.js */; };
-		C9740471268C1D7A0056B62B /* NamesDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9740467268C1D7A0056B62B /* NamesDatabase.swift */; };
-		C9740472268C1D7A0056B62B /* NamesDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9740467268C1D7A0056B62B /* NamesDatabase.swift */; };
-		C9740473268C1D7A0056B62B /* NamesDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9740467268C1D7A0056B62B /* NamesDatabase.swift */; };
-		C9740474268C1D7A0056B62B /* NamesDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9740467268C1D7A0056B62B /* NamesDatabase.swift */; };
-		C9740475268C1D7A0056B62B /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9740468268C1D7A0056B62B /* Name.swift */; };
-		C9740476268C1D7A0056B62B /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9740468268C1D7A0056B62B /* Name.swift */; };
-		C9740477268C1D7A0056B62B /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9740468268C1D7A0056B62B /* Name.swift */; };
-		C9740478268C1D7A0056B62B /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9740468268C1D7A0056B62B /* Name.swift */; };
 		C974047C268C271C0056B62B /* ToolbarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C974047B268C271C0056B62B /* ToolbarDelegate.swift */; };
 		C97C482F26F1C05B007EBCC0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9B8497126F1BFB900285016 /* Localizable.strings */; };
 		C9B8497326F1BFB900285016 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9B8497126F1BFB900285016 /* Localizable.strings */; };
@@ -130,8 +122,6 @@
 		C974042C268C1CA60056B62B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9740431268C1CA60056B62B /* Deadname Remover Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Deadname Remover Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9740436268C1CA60056B62B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C9740467268C1D7A0056B62B /* NamesDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NamesDatabase.swift; sourceTree = "<group>"; };
-		C9740468268C1D7A0056B62B /* Name.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Name.swift; sourceTree = "<group>"; };
 		C9740479268C1DA00056B62B /* Deadname Remover.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Deadname Remover.entitlements"; sourceTree = "<group>"; };
 		C974047A268C1DD00056B62B /* Deadname Remover Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Deadname Remover Extension.entitlements"; sourceTree = "<group>"; };
 		C974047B268C271C0056B62B /* ToolbarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarDelegate.swift; sourceTree = "<group>"; };
@@ -197,8 +187,6 @@
 		C97403F1268C1CA50056B62B /* Shared (App) */ = {
 			isa = PBXGroup;
 			children = (
-				C9740468268C1D7A0056B62B /* Name.swift */,
-				C9740467268C1D7A0056B62B /* NamesDatabase.swift */,
 				C97403F8268C1CA50056B62B /* ViewController.swift */,
 				C97403F9268C1CA50056B62B /* Assets.xcassets */,
 				C97403F2268C1CA50056B62B /* Resources */,
@@ -483,8 +471,6 @@
 			files = (
 				C974043F268C1CA60056B62B /* ViewController.swift in Sources */,
 				C974040D268C1CA60056B62B /* AppDelegate.swift in Sources */,
-				C9740471268C1D7A0056B62B /* NamesDatabase.swift in Sources */,
-				C9740475268C1D7A0056B62B /* Name.swift in Sources */,
 				C974040F268C1CA60056B62B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -493,11 +479,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9740476268C1D7A0056B62B /* Name.swift in Sources */,
 				C9740440268C1CA60056B62B /* ViewController.swift in Sources */,
 				C974047C268C271C0056B62B /* ToolbarDelegate.swift in Sources */,
 				C974041E268C1CA60056B62B /* AppDelegate.swift in Sources */,
-				C9740472268C1D7A0056B62B /* NamesDatabase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,8 +490,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9740443268C1CA60056B62B /* SafariWebExtensionHandler.swift in Sources */,
-				C9740473268C1D7A0056B62B /* NamesDatabase.swift in Sources */,
-				C9740477268C1D7A0056B62B /* Name.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,8 +498,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9740444268C1CA60056B62B /* SafariWebExtensionHandler.swift in Sources */,
-				C9740474268C1D7A0056B62B /* NamesDatabase.swift in Sources */,
-				C9740478268C1D7A0056B62B /* Name.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

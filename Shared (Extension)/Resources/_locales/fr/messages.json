@@ -20,7 +20,7 @@
         "message": "Deadname",
         "description": "Deadname placeholder."
     },
-    "chosen-name": {
+    "chosen_name": {
         "message": "Prénom chosi",
         "description": "Chosen name placeholder"
     }

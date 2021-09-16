@@ -34,8 +34,8 @@ function walkText(node, names) {
 }
 
 function replaceDeadname() {
-    browser.runtime.sendMessage("names").then((response) => {
-                
+    chrome.runtime.sendMessage("names", function (response) {
+        
         walkText(document.body, response);
     });
 }

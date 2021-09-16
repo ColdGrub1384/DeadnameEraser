@@ -1,5 +1,5 @@
-browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
-    browser.storage.local.get((item) => {
+chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+    chrome.storage.local.get((item) => {
         if (request == "names") {
             var _item = item.names;
             if (_item === undefined) {
@@ -7,7 +7,7 @@ browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
             }
             sendResponse(_item);
         } else if (request.names !== undefined) {
-            browser.storage.local.set({ names: request.names });
+            chrome.storage.local.set({ names: request.names });
             sendResponse({ ok: 1 });
         }
     });

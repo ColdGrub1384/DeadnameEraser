@@ -3,7 +3,7 @@ var nameElement;
 
 function load() {
     container.innerHTML = "";
-    browser.runtime.sendMessage("names").then((response) => {
+    chrome.runtime.sendMessage("names", function (response) {
         var i = 0;
         response.forEach(function (name) {
             var element = nameElement.cloneNode(true);
@@ -11,13 +11,13 @@ function load() {
             element.getElementsByClassName("element-left")[0].children[0].id = i.toString();
             
             element.getElementsByClassName("element-left")[0].children[1].value = name.deadname;
-            element.getElementsByClassName("element-left")[0].children[1].placeholder = browser.i18n.getMessage("deadname");
+            element.getElementsByClassName("element-left")[0].children[1].placeholder = chrome.i18n.getMessage("deadname");
 
             element.getElementsByClassName("element-right")[0].children[0].value = name.chosenname;
-            element.getElementsByClassName("element-right")[0].children[0].placeholder = browser.i18n.getMessage("chosen-name");
+            element.getElementsByClassName("element-right")[0].children[0].placeholder = chrome.i18n.getMessage("chosen_name");
             container.append(element);
             i += 1;
-        })
+        });
     });
 }
 
@@ -38,19 +38,19 @@ function getNames() {
 function add() {
     var names = getNames();
     names.push({ "deadname": "", "chosenname": "" });
-    browser.runtime.sendMessage({ names: names }).then((response) => {
+    chrome.runtime.sendMessage({ names: names }, function (response) {
         load();
     });
 }
 
 function save() {
-    browser.runtime.sendMessage({ names: getNames() });
+    chrome.runtime.sendMessage({ names: getNames() });
 }
 
 function remove(e) {
     var names = getNames();
     names.splice(parseInt(e.target.id), 1);
-    browser.runtime.sendMessage({ names: names }).then((response) => {
+    chrome.runtime.sendMessage({ names: names }, function (response) {
         load();
     });
 }
@@ -62,8 +62,8 @@ window.onload = function () {
     nameElement = document.getElementsByClassName("name")[0];
     nameElement.remove();
 
-    document.getElementById("add").innerHTML = browser.i18n.getMessage("add");
-    document.getElementById("instructions").innerHTML = browser.i18n.getMessage("instructions");
+    document.getElementById("add").innerHTML = chrome.i18n.getMessage("add");
+    document.getElementById("instructions").innerHTML = chrome.i18n.getMessage("instructions");
 
     document.getElementById("add").onclick = add;
 

@@ -12,7 +12,7 @@ function walkText(node, names) {
     if (node.nodeType == 3) {
         var newText = node.data;
         
-        names.forEach(function (name) {
+        names.sort((a,b) => a.deadname.length - b.deadname.length).reverse().forEach(function (name) {
 
             if (name.deadname.replace(" ", "").replace("\t", "") != "") {
                 newText = newText.replace(name.deadname.toUpperCase(), name.chosenname.toUpperCase());
@@ -23,8 +23,8 @@ function walkText(node, names) {
         
         if (newText != node.data) {
             timesDeadnamed += 1;
+            node.data = newText;
         }
-        node.data = newText;
     }
     if (node.nodeType == 1 && node.nodeName != "SCRIPT") {
         for (var i = 0; i < node.childNodes.length; i++) {

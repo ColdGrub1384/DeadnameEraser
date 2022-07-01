@@ -5,5 +5,3 @@
 <a href="https://apps.apple.com/us/app/deadname-eraser-for-safari/id1574424329"><img width=200px src="https://pyto.app/assets/appstore.png"></a>
 
 This web extension for Safari replaces your deadname by your chosen name.
-
-It requires iOS/iPadOS 15+ or macOS 12+.
